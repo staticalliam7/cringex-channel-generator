@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <img src="CRINGE.png"/>
+    <h1>CringeX Channel Name Generator</h1>
+
+    <!-- HTML !-->
+    <button class="button-27" role="button" onclick="generate();">GENERATE!</button>
+<br><br><br>
+    <br><br><br>
+
+    <b id="name">Your name will appear here</b>
+    <script>
+     function generate(){
+       var names = ["Elon", "Musk", "Elon Musk", "SpaceX", "Tesla", "Tech", "Future", "NASA", "Unity", "Fans", "Rewind", "World", "Land", "Space", "Everything", "Time", "Watch", "Vision", "News", "Explained", "Rewind", "Central", "Journey", "Live","New", "Update", "All", "All about"
+]; 
+     var words = ["Elon", "Musk", "Elon Musk", "SpaceX", "Tesla", "Tech", "Future", "NASA"]
+     var random1 = Math.floor(Math.random() * names.length);
+     var random2 = Math.floor(Math.random() * words.length);
+
+    document.getElementById("name").innerHTML = names[random1]+" "+ words[random2] ;
+
+      }
+  </script>
+</body>
+
+</html>
